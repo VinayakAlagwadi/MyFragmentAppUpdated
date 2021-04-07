@@ -15,8 +15,13 @@ class RedFragment:Fragment() {
         savedInstanceState: Bundle?
     ): View? {
        var v =  inflater.inflate(R.layout.red_frag,container,false)
-        var data :String? = arguments!!.getString("key")
-        v.textViewFrag.setText(data)
+        var uname :String? = arguments!!.getString("key1")
+        var pass :String? = arguments!!.getString("key2")
+
+        v.textViewFrag.setText(uname)
+
+        v.textViewHi.setText("Welcome")
+
         return v
 
 
